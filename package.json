@@ -1,6 +1,6 @@
 {
-  "name": "admindashboard",
-  "homepage": "https://milan-960.github.io/admindashboard",
+  "name": "Admin-Dashboard",
+  "homepage": "https://milan-960.github.io/Admin-Dashboard",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
