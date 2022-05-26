@@ -11,11 +11,11 @@ function App() {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Dashboard />} />
-          <Route path="orders" element={<Blank />} />
-          <Route path="products" element={<Blank />} />
-          <Route path="customers" element={<Blank />} />
-          <Route path="settings" element={<Blank />} />
-          <Route path="stats" element={<Blank />} />
+          <Route path="policy" element={<Blank />} />
+          <Route path="reports" element={<Blank />} />
+          <Route path="company" element={<Blank />} />
+          <Route path="useraccount" element={<Blank />} />
+          <Route path="history" element={<Blank />} />
         </Route>
       </Routes>
     </BrowserRouter>

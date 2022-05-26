@@ -2,12 +2,9 @@ import React from "react";
 
 import DashboardWrapper, {
   DashboardWrapperMain,
-  DashboardWrapperRight,
 } from "../components/dashboard-wrapper/DashboardWrapper";
 import SummaryBox from "../components/summary-box/SummaryBox";
 import { data } from "../constants";
-import OverallList from "../components/overall-list/OverallList";
-import RevenueList from "../components/revenue-list/RevenueList";
 
 const Dashboard = () => {
   return (
@@ -28,16 +25,6 @@ const Dashboard = () => {
           </div>
         </div>
       </DashboardWrapperMain>
-      <DashboardWrapperRight>
-        <div className="title mb">Overall</div>
-        <div className="mb">
-          <OverallList />
-        </div>
-        <div className="title mb">Revenue by channel</div>
-        <div className="mb">
-          <RevenueList />
-        </div>
-      </DashboardWrapperRight>
     </DashboardWrapper>
   );
 };

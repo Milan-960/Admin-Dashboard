@@ -1,6 +1,6 @@
 const images = {
-    logo: require('../assets/images/logo.svg').default,
-    avt: require('../assets/images/avt.jpg')
-}
+  logo: require("../assets/images/logo.png"),
+  avt: require("../assets/images/av.png"),
+};
 
-export default images
+export default images;

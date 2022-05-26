@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+
 import "./topnav.scss";
+
 import { Link, useLocation } from "react-router-dom";
-// import { images } from "../../constants";
+
 import topbarNav from "../../configs/topbarNav";
 
 const TopNav = () => {
@@ -15,29 +17,28 @@ const TopNav = () => {
     setActiveIndex(curPath.length === 0 ? 0 : activeItem);
   }, [location]);
 
-  //   const closetopbarNav = () => {
-  //     document.querySelector(".main__content").style.transform =
-  //       "scale(1) translateX(0)";
-  //     setTimeout(() => {
-  //       document.body.classList.remove("topbarNav-open");
-  //       document.querySelector(".main__content").style = "";
-  //     }, 500);
-  //   };
+  const openSidebar = () => {
+    document.body.classList.add("sidebar-open");
+  };
 
   return (
-    <div className="topbarNav">
-      {topbarNav.map((nav, index) => (
-        <Link
-          to={nav.link}
-          key={`nav-${index}`}
-          className={`topbarNav__menu__item ${
-            activeIndex === index && "active"
-          }`}
-        >
-          {/* <div className="topbarNav__menu__item__icon">{nav.icon}</div> */}
-          <div className="topbarNav__menu__item__txt">{nav.text}</div>
-        </Link>
-      ))}
+    <div className="topnav">
+      <div className="topnav__menu">
+        {topbarNav.map((nav, index) => (
+          <Link
+            to={nav.link}
+            key={`nav-${index}`}
+            className={`topnav__menu__item ${
+              activeIndex === index && "active"
+            }`}
+          >
+            <div className="topnav__menu__item__txt">{nav.text}</div>
+          </Link>
+        ))}
+      </div>
+      <div className="sidebar-toggle" onClick={openSidebar}>
+        <i className="bx bx-menu-alt-right"></i>
+      </div>
     </div>
   );
 };

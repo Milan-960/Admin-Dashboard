@@ -1,44 +1,38 @@
 const sidebarNav = [
   {
     link: "/",
-    section: "home",
-    icon: <i className="bx bx-home-alt"></i>,
-    text: "Home",
-  },
-  {
-    link: "/overview",
     section: "overview",
-    icon: <i className="bx bx-receipt"></i>,
+    icon: <i class="bx bx-dialpad"></i>,
     text: "Overview",
   },
   {
     link: "/policy",
     section: "policy",
-    icon: <i className="bx bx-cube"></i>,
+    icon: <i class="bx bx-file-find"></i>,
     text: "Policy",
   },
   {
     link: "/reports",
     section: "reports",
-    icon: <i className="bx bx-user"></i>,
+    icon: <i class="bx bx-bug"></i>,
     text: "Reports",
   },
   {
     link: "/company",
     section: "company",
-    icon: <i className="bx bx-cog"></i>,
+    icon: <i class="bx bx-building"></i>,
     text: "Company",
   },
   {
     link: "/useraccount",
     section: "useraccount",
-    icon: <i className="bx bx-cog"></i>,
-    text: "Useraccount",
+    icon: <i class="bx bx-user-circle"></i>,
+    text: "User Account",
   },
   {
     link: "/history",
     section: "history",
-    icon: <i className="bx bx-cog"></i>,
+    icon: <i class="bx bx-file"></i>,
     text: "History",
   },
 ];

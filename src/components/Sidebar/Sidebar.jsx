@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./sidebar.scss";
 import { Link, useLocation } from "react-router-dom";
-import images from "../../assets/images/logo.svg";
+import { images } from "../../constants";
 import sidebarNav from "../../configs/sidebarNav";
+import UserInfo from "../user-info/UserInfo";
 
 const Sidebar = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -26,13 +27,15 @@ const Sidebar = () => {
 
   return (
     <div className="sidebar">
-      <div className="sidebar__menu">
-        <div className="sidebar__logo">
-          <img src={images.logo} alt="" />
-          <div className="sidebar-close" onClick={closeSidebar}>
-            {/* <i className="bx bx-x"></i> */}
-          </div>
+      <div className="sidebar__logo">
+        <img src={images.logo} alt="logo" />
+        <p>Insurance Portal</p>
+        <div className="sidebar-close" onClick={closeSidebar}>
+          <i className="bx bx-x"></i>
         </div>
+      </div>
+
+      <div className="sidebar__menu">
         {sidebarNav.map((nav, index) => (
           <Link
             to={nav.link}
@@ -42,7 +45,7 @@ const Sidebar = () => {
             }`}
             onClick={closeSidebar}
           >
-            {/* <div className="sidebar__menu__item__icon">{nav.icon}</div> */}
+            <div className="sidebar__menu__item__icon">{nav.icon}</div>
             <div className="sidebar__menu__item__txt">{nav.text}</div>
           </Link>
         ))}

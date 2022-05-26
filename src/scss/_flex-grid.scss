@@ -3,10 +3,11 @@
 
 .row {
   display: flex;
-  flex-wrap: wrap;
-  margin: 0 math.div($spacing, 2) * -1;
+  margin: 0 math.div($spacing, 0) * -1;
 
   @include tablet {
+    display: flex;
+    flex-wrap: wrap;
     margin: 0 math.div($mobileSpacing, 2) * -1;
   }
 }

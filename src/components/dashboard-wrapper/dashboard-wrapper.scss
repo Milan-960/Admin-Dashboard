@@ -8,7 +8,6 @@
 
   &__main {
     flex-grow: 1;
-    padding-right: $sideBarWidth;
 
     @include tablet {
       padding-right: 0;
@@ -30,7 +29,6 @@
       position: relative;
       padding: $mobileSpacing;
       margin-top: $mobileSpacing;
-      border-radius: $borderRadius;
       width: 100%;
       height: max-content;
     }

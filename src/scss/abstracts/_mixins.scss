@@ -2,7 +2,6 @@
 
 @mixin flex($alignItem: center, $justifyContent: center) {
   display: flex;
-  align-items: $alignItem;
   justify-content: $justifyContent;
 }
 

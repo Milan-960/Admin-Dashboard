@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 
 const Blank = () => {
-  return (
-    <>
-      <h1>This is a Blank Page for adding future pages</h1>
-    </>
-  );
-};
+    return (
+        <div>
+            This is a blank page
+        </div>
+    )
+}
 
-export default Blank;
+export default Blank

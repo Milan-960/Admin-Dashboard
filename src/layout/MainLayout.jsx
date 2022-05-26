@@ -1,8 +1,8 @@
 import React from "react";
 import "./main-layout.scss";
 import { Outlet } from "react-router-dom";
-import Sidebar from "../components/Sidebar/Sidebar";
-import TopNav from "../components/TopNav/TopNav";
+import Sidebar from "../components/sidebar/Sidebar";
+import TopNav from "../components/topnav/TopNav";
 
 const MainLayout = () => {
   return (
@@ -11,8 +11,6 @@ const MainLayout = () => {
       <div className="main">
         <div className="main__content">
           <TopNav />
-        </div>
-        <div className="main__content">
           <Outlet />
         </div>
       </div>
