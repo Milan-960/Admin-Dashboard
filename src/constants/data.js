@@ -9,31 +9,30 @@ const data = {
     {
       title: "1000",
       subtitle: "Total Value of Disbursement",
-      value: "400$",
-      minValue: 400,
     },
     {
       title: "2500",
       subtitle: "Total Value of Disbursement",
-      value: "3000",
-      percent: 49,
     },
     {
       title: "2500",
       subtitle: "Total Value of Disbursement",
-      value: "$678",
-      percent: 38,
     },
   ],
 
   revenueByChannel: [
     {
       title: "Policy",
-      value: 30,
+      subtitle: "400",
+      value: 40,
     },
+  ],
+
+  revenueByClaim: [
     {
       title: "Claim",
-      value: 40,
+      subtitle: "800",
+      value: 70,
     },
   ],
 };

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./progress-bar.scss";
 
-const ProgressBar = ({ value }) => {
+const ClaimProgressBar = ({ value }) => {
   const barInnerRef = useRef();
 
   useEffect(() => {
@@ -17,4 +17,4 @@ const ProgressBar = ({ value }) => {
   );
 };
 
-export default ProgressBar;
+export default ClaimProgressBar;
