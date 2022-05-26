@@ -1,5 +1,6 @@
 {
-  "name": "ecommerce-dashboard",
+  "name": "admin-aashboard",
+  "homepage": "https://milan-960.github.io/Admin-Dashboard/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,16 +8,19 @@
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",
     "chart.js": "^3.7.0",
-    "react": "^17.0.2",
+    "gh-pages": "^4.0.0",
+    "react": "^18.1.0",
     "react-chartjs-2": "^4.0.0",
     "react-circular-progressbar": "^2.0.4",
-    "react-dom": "^17.0.2",
+    "react-dom": "^18.1.0",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "sass": "^1.48.0",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
