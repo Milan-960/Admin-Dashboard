@@ -34,6 +34,7 @@ const Sidebar = () => {
           <i className="bx bx-x"></i>
         </div>
       </div>
+      <UserInfo />
 
       <div className="sidebar__menu">
         {sidebarNav.map((nav, index) => (

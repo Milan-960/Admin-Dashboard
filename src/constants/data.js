@@ -1,10 +1,10 @@
-import images from "./images";
+// import images from "./images";
 
 const data = {
-  user: {
-    name: "Hello ! Rusalba Ruiz",
-    img: images.av,
-  },
+  // user: {
+  //   name: "Hello ! Rusalba Ruiz",
+  //   img: images.av,
+  // },
   summary: [
     {
       title: "1000",
