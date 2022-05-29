@@ -6,7 +6,7 @@ const PolicyProgressBar = ({ value }) => {
 
   useEffect(() => {
     barInnersRef.current.style.width = `${value}%`;
-  }, []);
+  });
 
   return (
     <>

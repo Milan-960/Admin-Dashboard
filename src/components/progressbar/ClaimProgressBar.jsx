@@ -6,7 +6,7 @@ const ClaimProgressBar = ({ value }) => {
 
   useEffect(() => {
     barInnerRef.current.style.width = `${value}%`;
-  }, []);
+  });
 
   return (
     <>

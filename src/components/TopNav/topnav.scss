@@ -4,6 +4,8 @@
   display: flex;
   margin-bottom: $spacing;
   background-color: #fff;
+  align-content: space-around;
+  justify-content: space-between;
 
   @include tablet {
     margin-bottom: $mobileSpacing;
